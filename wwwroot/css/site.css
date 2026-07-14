@@ -30,6 +30,7 @@ body {
   font-family:sans-serif;
  
 }
+
 .icono
 {
     width:100%;
@@ -66,6 +67,13 @@ header{
 .titulo
 {
     color:var(--textoprincipal);
+}
+footer
+{
+    background-color:var(--textoprincipal);
+    
+    padding:30px;
+   
 }
 .boton
 {
