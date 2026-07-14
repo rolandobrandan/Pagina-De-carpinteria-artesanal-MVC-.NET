@@ -5,6 +5,9 @@
     --verde-claro: #A3B19B;
     --marron: #8B5E34;
     --verde: #4A5D4E;
+    --whatsapp: #25D366;
+    --fb-blue: #1877F2;
+    --ig-orange: #FD1D1D;
 }
 html {
   font-size: 14px;
@@ -68,13 +71,47 @@ header{
 {
     color:var(--textoprincipal);
 }
-footer
+.iconosredes a
 {
-    background-color:var(--textoprincipal);
     
-    padding:30px;
-   
+    margin:10px;
+    padding:13px;
+    transition:300ms;
 }
+.iconosredes a i
+{
+    
+    border:1px solid gray;
+    padding:12px;
+    border-radius:60px;
+}
+    .iconosredes a:nth-child(1) i 
+    {
+        color: var(--ig-orange);
+        transition:300ms;
+    }
+    .iconosredes a:nth-child(2) i {
+        color: var(--whatsapp);
+        transition: 300ms;
+    }
+    .iconosredes a:nth-child(3) i {
+        color: var(--fb-blue);
+        transition: 300ms;
+    }
+    .iconosredes a:nth-child(1) i:hover {
+        color: var(--marron);
+       
+    }
+    .iconosredes a:nth-child(2) i:hover {
+        color: var(--marron);
+    }
+    .iconosredes a:nth-child(3) i:hover {
+        color: var(--marron);
+    }
+    footer {
+        background-color: var(--textoprincipal);
+        padding: 30px;
+    }
 .boton
 {
     
