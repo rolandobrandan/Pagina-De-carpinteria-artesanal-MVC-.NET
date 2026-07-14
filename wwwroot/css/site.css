@@ -1,6 +1,10 @@
 :root {
-    --colorprimario: black;
-   
+    --fondoprincipal: #F7F6F2;
+    --textoprincipal: #2D2D2D;
+    --acentos: #38b5e34;
+    --verde-claro: #A3B19B;
+    --marron: #8B5E34;
+    --verde: #4A5D4E;
 }
 html {
   font-size: 14px;
@@ -26,37 +30,55 @@ body {
   font-family:sans-serif;
  
 }
+.icono
+{
+    width:100%;
+    height:90px;
+ display:flex;
+ 
 
-.nav-item
-{
-    display:flex;
-  
-    margin:10px;
-    padding:10px;
-   
-    
 }
-.nav-link
+header{
+    background-color:var(--textoprincipal);
+}
+.navegacion .navbar-nav .nav-link
 {
-    color:white;
+    padding:10px 15px;
+    margin:0px;
+    color:var(--fondoprincipal) !important;
     transition:300ms;
 }
-.nav-link:hover
-{
-    text-decoration:underline;
-    color:var(--text-dark) !important;
+.navegacion .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: var(--verde-claro) !important;
 }
+.portada {
+    background-image: url('../img/carpinteriafinal.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height:600px;
+    display:flex;
+    align-items:center;
+  
 
-
+}
+.titulo
+{
+    color:var(--textoprincipal);
+}
 .boton
 {
+    
     transition:300ms;
 
 }
-    .boton:hover {
-        color: var(--text-dark) !important;
-    }
-hr
+.col
 {
-    border:1px solid gray;
+    display:flex;
 }
+.boton:hover
+{
+    background-color:var(--verde) !important;
+}
+    

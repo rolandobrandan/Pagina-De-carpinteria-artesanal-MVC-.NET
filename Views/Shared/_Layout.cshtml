@@ -15,12 +15,12 @@
   
 </head>
 <body>
-    <!--hola-->
+
    <header>
-    <nav class="navbar navbar-expand-lg bg-light text-dark">
-        <div class="container-fluid">
-                <div class="icono p-5">
-                    <img src="~/img/logo.png" width="160px"/>
+    <nav class="navegacion navbar navbar-expand-lg   ">
+        <div class="container-fluid ">
+                <div class="icono p-0 m-0 ">
+                    <img src="~/img/logo.png" />
                 </div>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation"  >
@@ -28,8 +28,8 @@
                 </button>
                 <div class="navbar-collapse collapse justify-content-between">
                     
-                    <ul class="navbar-nav d-flex align-items-center justify-content-center">
-                        <li class="nav-item">
+                    <ul class="navbar-nav d-flex align-items-center justify-content-center ms-5">
+                        <li class="nav-item ">
                             <a href="#" class="nav-link ">
                                 <i class="fa-solid fa-hammer me-2"></i>
                                 Nuestros Trabajos
@@ -65,29 +65,17 @@
       
     </nav>
    </header>
-   <hr />
+   
 
 
 
-    <section class="portada">
-
-        <div class="title-container">
-            <h1>Bienvenidos a Raíces Carpintería</h1>
-        </div>
-
-        <div class="botones-container">
-            <a class="button1">Ver Catalogo</a>
-            <a class="button2">Personalizar</a>
-        </div>
-
-    </section>
     
-    <div class="container">
+  
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
-    <footer>
+   
+    <footer class="footer1 text-center position-fixed bottom-0 ">
         <p>Hecho por Rolando brandan - Yamil Javier Cordoba - Juan Melgar - ISSCO 2026</p>
     </footer>
 
