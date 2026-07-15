@@ -1,143 +1,67 @@
-:root {
-    --fondoprincipal: #F7F6F2;
-    --textoprincipal: #2D2D2D;
-    --acentos: #38b5e34;
-    --verde-claro: #A3B19B;
-    --marron: #8B5E34;
-    --verde: #4A5D4E;
-    --whatsapp: #25D366;
-    --fb-blue: #1877F2;
-    --ig-orange: #FD1D1D;
-}
-html {
-  font-size: 14px;
+.titulo {
+  color: #F7F6F2;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-  font-family:sans-serif;
- 
-}
-
-.icono
-{
-    width:100%;
-    height:90px;
- display:flex;
- 
-
-}
-header{
-    background-color:var(--textoprincipal);
-}
-.navegacion .navbar-nav .nav-link
-{
-    padding:10px 15px;
-    margin:0px;
-    color:var(--fondoprincipal) !important;
-    transition:300ms;
-}
-.navegacion .navbar-nav .nav-link:hover {
-    text-decoration: underline;
-    color: var(--verde-claro) !important;
-}
 .portada {
-    background-image: url('../img/carpinteriafinal.png');
-    background-size:cover;
-    background-repeat:no-repeat;
-    width:100%;
-    height:600px;
-    display:flex;
-    align-items:center;
-  
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-image: url("../img/carpinteriafinal.png");
+  background-size: cover;
+  height: 500px;
+  justify-content: center;
+}
+.portada .container {
+  padding: 50px;
+}
+.portada .boton {
+  background-color: #8B5E34;
+  font-weight: bold;
+  color: #2D2D2D;
+}
+.portada .boton:hover {
+  background-color: #4A5D4E;
+  color: #F7F6F2;
+}
 
+.navegacion {
+  background-color: #2D2D2D !important;
 }
-.titulo
-{
-    color:var(--textoprincipal);
+.navegacion .container-fluid .icono img {
+  width: 60px;
+  height: auto;
 }
-.iconosredes a
-{
-    
-    margin:10px;
-    padding:13px;
-    transition:300ms;
+.navegacion .container-fluid .nav-scss .item-scss {
+  display: flex;
+  padding: 10px 15px;
 }
-.iconosredes a i
-{
-    
-    border:1px solid gray;
-    padding:12px;
-    border-radius:60px;
+.navegacion .container-fluid .nav-scss .item-scss .link-scss.nav-link {
+  transition: 300ms;
+  color: #F7F6F2 !important;
 }
-    .iconosredes a:nth-child(1) i 
-    {
-        color: var(--ig-orange);
-        transition:300ms;
-    }
-    .iconosredes a:nth-child(2) i {
-        color: var(--whatsapp);
-        transition: 300ms;
-    }
-    .iconosredes a:nth-child(3) i {
-        color: var(--fb-blue);
-        transition: 300ms;
-    }
-    .iconosredes a:nth-child(1) i:hover {
-        color: var(--marron);
-       
-    }
-    .iconosredes a:nth-child(2) i:hover {
-        color: var(--marron);
-    }
-    .iconosredes a:nth-child(3) i:hover {
-        color: var(--marron);
-    }
-    footer {
-        background-color: var(--textoprincipal);
-        padding: 30px;
-    }
-    .buscador input
-    {
-        position: relative;
-        width:110%;
-        height:40px;
-        border:1px solid gray;
-        border-radius:30px;
-        padding:3px;
-        z-index:0;
-      
-    
-    }
-   
-  
-.boton
-{
-    
-    transition:300ms;
+.navegacion .container-fluid .nav-scss .item-scss .link-scss.nav-link:hover {
+  color: #A3B899 !important;
+}
+.navegacion .container-fluid .boton {
+  background-color: #8B5E34 !important;
+  color: #F7F6F2 !important;
+  transition: 300ms;
+}
+.navegacion .container-fluid .boton:hover {
+  background-color: #A3B899 !important;
+}
+.navegacion .buscador input {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+.navegacion > .boton {
+  background-color: #8B5E34 !important;
+  color: #F7F6F2 !important;
+}
+.navegacion > .boton:hover {
+  background-color: #A3B899 !important;
+}
 
-}
-.col
-{
-    display:flex;
-}
-.boton:hover
-{
-    background-color:var(--verde) !important;
-}
-    
+/*# sourceMappingURL=site.css.map */

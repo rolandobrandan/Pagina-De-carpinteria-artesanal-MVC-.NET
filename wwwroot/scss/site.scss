@@ -3,21 +3,24 @@ $color-primario: #F7F6F2;
 $color-secundario: #2D2D2D;
 $color-madera-detalle: #8B5E34;
 $color-verde-detalle: #4A5D4E;
-
+$verde-menta: #A3B899;
 
 .titulo {
     color: $color-primario;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
-.portada{
+.portada {
     display: flex;
     flex-direction: column;
-    padding:40px;
+    padding: 40px;
+background-image: url('../img/carpinteriafinal.png');
+background-size:cover;
+height:500px;
     justify-content: center;
     margin-bottom: 60px;
 
-    .container{
+    .container {
         padding: 50px;
     }
 
@@ -25,9 +28,9 @@ $color-verde-detalle: #4A5D4E;
         background-color: $color-madera-detalle;
         font-weight: bold;
         color: $color-secundario;
-        
     }
-    .boton:hover{
+
+    .boton:hover {
         background-color: $color-verde-detalle;
         color: $color-primario;
     }
@@ -86,4 +89,62 @@ $color-verde-detalle: #4A5D4E;
 
 
     }*/
+}
+.navegacion {
+    background-color: $color-secundario !important;
+
+    .container-fluid {
+        .icono {
+            img {
+                width: 60px;
+                height: auto;
+            }
+        }
+
+        .nav-scss {
+            .item-scss {
+                display: flex;
+                padding: 10px 15px;
+
+                .link-scss.nav-link {
+                    transition: 300ms;
+                    color: $color-primario !important;
+
+                    &:hover {
+                        color: $verde-menta !important;
+                    }
+                }
+            }
+        }
+
+        .boton {
+            background-color: $color-madera-detalle !important;
+            color: $color-primario !important;
+            transition: 300ms;
+
+            &:hover {
+                background-color: $verde-menta !important;
+            }
+        }
+    }
+
+    .buscador {
+        input {
+            border:1px solid gray;
+            border-radius: 20px;
+            padding: 6px 15px;
+         
+            
+        }
+    }
+
+    > .boton {
+        background-color: $color-madera-detalle !important;
+        color: $color-primario !important;
+
+        &:hover {
+            background-color: $verde-menta !important;
+           
+        }
+    }
 }
