@@ -1,35 +1,4 @@
-﻿.icono {
-  width: 50px;
-}
-
-.portada {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  padding: 100px;
-  gap: 40px;
-}
-.portada .title-container h1 {
-  color: black;
-}
-.portada .botones-container {
-  display: flex;
-  gap: 30px;
-  flex-direction: row;
-}
-.portada .botones-container .button1 {
-  text-decoration: none;
-  border: 1px solid blue;
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-.portada .botones-container .button2 {
-  text-decoration: none;
-  border: 1px solid #3f72cf;
-  background-color: #3f72cf;
-  color: black;
-  padding: 10px;
-  cursor: pointer;
+﻿.titulo {
+  color: #F7F6F2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

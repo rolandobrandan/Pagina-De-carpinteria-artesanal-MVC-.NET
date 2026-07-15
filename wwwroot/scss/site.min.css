@@ -1,1 +1,1 @@
-﻿.icono{width:50px;}.portada{background-color:#f00;display:flex;flex-direction:column;padding:100px;gap:40px;}.portada .title-container h1{color:#000;}.portada .botones-container{display:flex;gap:30px;flex-direction:row;}.portada .botones-container .button1{text-decoration:none;border:1px solid #00f;background-color:#00f;color:#fff;padding:10px;cursor:pointer;}.portada .botones-container .button2{text-decoration:none;border:1px solid #3f72cf;background-color:#3f72cf;color:#000;padding:10px;cursor:pointer;}
+﻿.titulo{color:#f7f6f2;text-shadow:2px 2px 4px rgba(0,0,0,.3);}
