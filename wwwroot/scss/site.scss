@@ -15,6 +15,7 @@ $color-verde-detalle: #4A5D4E;
     flex-direction: column;
     padding:40px;
     justify-content: center;
+    margin-bottom: 60px;
 
     .container{
         padding: 50px;
@@ -30,4 +31,59 @@ $color-verde-detalle: #4A5D4E;
         background-color: $color-verde-detalle;
         color: $color-primario;
     }
+}
+
+// footer
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    gap: 45px;
+
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+        color: $color-primario;
+        height: 100%;
+        text-align: start;
+        font-size: 13px;
+
+        ul {
+
+            li {
+                list-style: none;
+                text-decoration: none;
+                line-height: 3.0;
+
+                a {
+                    cursor: pointer;
+
+                    i{
+                        color: $color-madera-detalle;
+                        padding: 7px;
+                    }
+                }
+
+                a:hover {
+                    color: $color-verde-detalle;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    /*.info-footer {
+        display: flex;
+        flex-direction: column;
+        color: $color-primario;
+        height: 100%;
+        text-align: start;
+        font-size: 12px;
+
+
+    }*/
 }

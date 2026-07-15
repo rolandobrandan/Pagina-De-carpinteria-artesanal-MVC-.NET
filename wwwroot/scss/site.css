@@ -8,6 +8,7 @@
   flex-direction: column;
   padding: 40px;
   justify-content: center;
+  margin-bottom: 60px;
 }
 .portada .container {
   padding: 50px;
@@ -20,4 +21,48 @@
 .portada .boton:hover {
   background-color: #4A5D4E;
   color: #F7F6F2;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+  gap: 45px;
+  /*.info-footer {
+      display: flex;
+      flex-direction: column;
+      color: $color-primario;
+      height: 100%;
+      text-align: start;
+      font-size: 12px;
+
+
+  }*/
+}
+.footer .contenido-footer {
+  display: flex;
+  flex-direction: column;
+  color: #F7F6F2;
+  height: 100%;
+  text-align: start;
+  font-size: 13px;
+}
+.footer .contenido-footer ul li {
+  list-style: none;
+  text-decoration: none;
+  line-height: 3;
+}
+.footer .contenido-footer ul li a {
+  cursor: pointer;
+}
+.footer .contenido-footer ul li a i {
+  color: #8B5E34;
+  padding: 7px;
+}
+.footer .contenido-footer ul li a:hover {
+  color: #4A5D4E;
+  transition: 0.3s;
 }
