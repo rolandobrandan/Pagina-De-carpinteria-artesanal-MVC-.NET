@@ -18,6 +18,7 @@ background-image: url('../img/carpinteriafinal.png');
 background-size:cover;
 height:500px;
     justify-content: center;
+    margin-bottom: 60px;
 
     .container {
         padding: 50px;
@@ -35,6 +36,60 @@ height:500px;
     }
 }
 
+// footer
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    gap: 45px;
+
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+        color: $color-primario;
+        height: 100%;
+        text-align: start;
+        font-size: 13px;
+
+        ul {
+
+            li {
+                list-style: none;
+                text-decoration: none;
+                line-height: 3.0;
+
+                a {
+                    cursor: pointer;
+
+                    i{
+                        color: $color-madera-detalle;
+                        padding: 7px;
+                    }
+                }
+
+                a:hover {
+                    color: $color-verde-detalle;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    /*.info-footer {
+        display: flex;
+        flex-direction: column;
+        color: $color-primario;
+        height: 100%;
+        text-align: start;
+        font-size: 12px;
+
+
+    }*/
+}
 .navegacion {
     background-color: $color-secundario !important;
 
