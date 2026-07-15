@@ -5,20 +5,41 @@ $color-madera-detalle: #8B5E34;
 $color-verde-detalle: #4A5D4E;
 $verde-menta: #A3B899;
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main[role="main"] {
+    flex: 1 0 auto;
+}
+
 .titulo {
     color: $color-primario;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
+
+
 .portada {
     display: flex;
     flex-direction: column;
     padding: 40px;
-background-image: url('../img/carpinteriafinal.png');
-background-size:cover;
-height:500px;
-    justify-content: center;
+    background-image: url('../img/carpinteriafinal.png');
+    background-size:cover;
+    height:500px;
+    
     margin-bottom: 60px;
+    align-items: center;
+    
+   
 
     .container {
         padding: 50px;
@@ -36,60 +57,7 @@ height:500px;
     }
 }
 
-// footer
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    text-align: center;
-    gap: 45px;
-
-    .contenido-footer {
-        display: flex;
-        flex-direction: column;
-        color: $color-primario;
-        height: 100%;
-        text-align: start;
-        font-size: 13px;
-
-        ul {
-
-            li {
-                list-style: none;
-                text-decoration: none;
-                line-height: 3.0;
-
-                a {
-                    cursor: pointer;
-
-                    i{
-                        color: $color-madera-detalle;
-                        padding: 7px;
-                    }
-                }
-
-                a:hover {
-                    color: $color-verde-detalle;
-                    transition: 0.3s;
-                }
-            }
-        }
-    }
-
-    /*.info-footer {
-        display: flex;
-        flex-direction: column;
-        color: $color-primario;
-        height: 100%;
-        text-align: start;
-        font-size: 12px;
-
-
-    }*/
-}
 .navegacion {
     background-color: $color-secundario !important;
 
@@ -145,6 +113,78 @@ height:500px;
         &:hover {
             background-color: $verde-menta !important;
            
+        }
+    }
+}
+
+
+
+// footer
+
+.footer {
+    flex-shrink: 0; //
+    position: relative !important; // Rompe el position: absolute de la plantilla
+    bottom: auto !important; //
+    width: 100% !important; //
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    text-align: center;
+    gap: 45px;
+    background-color: $color-secundario;
+    width: 100%;
+
+    .iconosredes {
+        a{
+            border: 1px solid gray;
+            border-radius: 100px;
+            padding: 10px;
+            color:$color-madera-detalle;
+            i{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        a:hover {
+            transition: 0.3s;
+            color: $color-verde-detalle;
+            background-color: $color-primario;
+        }
+    }
+
+
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+        color: $color-primario;
+        height: 100%;
+        text-align: start;
+        font-size: 13px;
+
+        ul {
+
+
+            li {
+                list-style: none;
+                text-decoration: none;
+                line-height: 3.0;
+
+                a {
+                    cursor: pointer;
+
+                    i {
+                        color: $color-madera-detalle;
+                        padding: 7px;
+                    }
+                }
+
+                a:hover {
+                    color: $color-verde-detalle;
+                    transition: 0.3s;
+                }
+            }
         }
     }
 }
