@@ -14,6 +14,9 @@ $verde-menta: #A3B899;
     display: flex;
     flex-direction: column;
     padding: 40px;
+background-image: url('../img/carpinteriafinal.png');
+background-size:cover;
+height:500px;
     justify-content: center;
 
     .container {
@@ -60,7 +63,7 @@ $verde-menta: #A3B899;
         }
 
         .boton {
-            background-color: $color-verde-detalle !important;
+            background-color: $color-madera-detalle !important;
             color: $color-primario !important;
             transition: 300ms;
 
@@ -75,23 +78,18 @@ $verde-menta: #A3B899;
             border:1px solid gray;
             border-radius: 20px;
             padding: 6px 15px;
-            background-color: $color-primario;
-            color: $color-secundario;
          
-            transition: 300ms;
-
-            &:focus {
-                border-color: $verde-menta;
-            }
+            
         }
     }
 
     > .boton {
-        background-color: $color-verde-detalle !important;
+        background-color: $color-madera-detalle !important;
         color: $color-primario !important;
 
         &:hover {
             background-color: $verde-menta !important;
+           
         }
     }
 }
