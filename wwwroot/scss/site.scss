@@ -3,7 +3,7 @@ $color-primario: #F7F6F2;
 $color-secundario: #2D2D2D;
 $color-madera-detalle: #8B5E34;
 $color-verde-detalle: #4A5D4E;
-
+$verde-menta: #A3B899;
 
 .titulo {
     color: $color-primario;
@@ -31,3 +31,51 @@ $color-verde-detalle: #4A5D4E;
         color: $color-primario;
     }
 }
+.navegacion {
+    background-color: $color-secundario !important;
+
+
+    .container-fluid {
+        .icono {
+            img {
+                width: 60px;
+                height: auto;
+            }
+        }
+
+        .nav-scss {
+            .item-scss {
+                display: flex;
+                padding: 10px 15px;
+
+                .link-scss.nav-link {
+                    transition: 300ms;
+                    color: $color-primario;
+
+                    &:hover {
+                        color: $verde-menta;
+                    }
+                }
+            }
+        }
+
+        .boton {
+            background-color: $color-verde-detalle !important;
+            transition: 300ms;
+
+            &:hover {
+                color: $color-secundario;
+            }
+        }
+    }
+
+    .boton {
+        background-color: $color-verde-detalle !important;
+        transition: 300ms;
+
+        &:hover {
+            color: $color-secundario;
+        }
+    }
+}
+

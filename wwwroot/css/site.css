@@ -22,4 +22,37 @@
   color: #F7F6F2;
 }
 
+.navegacion {
+  background-color: #2D2D2D !important;
+}
+.navegacion .container-fluid .icono img {
+  width: 60px;
+  height: auto;
+}
+.navegacion .container-fluid .nav-scss .item-scss {
+  display: flex;
+  padding: 10px 15px;
+}
+.navegacion .container-fluid .nav-scss .item-scss .link-scss.nav-link {
+  transition: 300ms;
+  color: #F7F6F2;
+}
+.navegacion .container-fluid .nav-scss .item-scss .link-scss.nav-link:hover {
+  color: #A3B899;
+}
+.navegacion .container-fluid .boton {
+  background-color: #4A5D4E !important;
+  transition: 300ms;
+}
+.navegacion .container-fluid .boton:hover {
+  color: #2D2D2D;
+}
+.navegacion .boton {
+  background-color: #4A5D4E !important;
+  transition: 300ms;
+}
+.navegacion .boton:hover {
+  color: #2D2D2D;
+}
+
 /*# sourceMappingURL=site.css.map */
