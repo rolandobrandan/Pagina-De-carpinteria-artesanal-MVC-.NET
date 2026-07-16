@@ -229,6 +229,7 @@ main[role="main"] {
     }
 }
 .formulario {
+   margin-left:50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,6 +250,8 @@ main[role="main"] {
     }
 
     #txtUsuario {
+        display: flex;
+        flex-direction: column;
         border: 1px solid gray;
         border-radius: 90px;
         padding: 5px;
@@ -261,6 +264,7 @@ main[role="main"] {
     }
 
     #txtContra {
+        display: flex;
         border: 1px solid gray;
         border-radius: 90px;
         padding: 5px;
@@ -269,13 +273,19 @@ main[role="main"] {
     .Notas {
         text-transform: uppercase;
         text-decoration: underline;
-        margin: 9px;
+        margin: 10px;
     }
 
     #txtNotas {
         border: 1px solid gray;
         border-radius: 10px;
-        width:200px;
+        width: 200px;
         padding: 5px;
+    }
+
+    .imgcliente
+        {
+        width:800px;
+        height:600px;
     }
 }

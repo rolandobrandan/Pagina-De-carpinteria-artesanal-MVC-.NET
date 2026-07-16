@@ -2,18 +2,27 @@
     ViewData["Title"] = "Contacto";
 }
 <form class="formulario py-5">
+    <div class="row ">
+        <div class="col-12 col-md-6 col-lg-6">
+            <h4>Bienvenido</h4>
+            <div class="imagenformulario"> <img src="~/img/logo2.png" /></div>
 
-    <h4>Bienvenido</h4>
-    <div class="imagenformulario"> <img src="~/img/logo2.png" /></div>
-   
-    <label class="labelusuario" for="txtUsuario">Usuario</label>
-    <input  id="txtUsuario" name="txtUsuario" type="text" placeholder="Ingrese su usuario" />
-    <label class="labelcontra" for="txtContraseña">Contraseña</label>
-    <input id="txtContra" name="txtContraseña" type="password" placeholder="Ingrese su contraseña" />
+            <label class="labelusuario" for="txtUsuario">Usuario</label>
+            <input id="txtUsuario" name="txtUsuario" type="text" placeholder="Ingrese su usuario" />
+            <label class="labelcontra" for="txtContraseña">Contraseña</label>
+            <input id="txtContra" name="txtContraseña" type="password" placeholder="Ingrese su contraseña" />
+            <a href="#" class="p-3 ">Olvidaste tu contraseña ?</a>
+            <br>
+            <label class="Notas" for="txtNotas">Ingrese una sugerencia o Reporta un error:</label> <br />
+            <textarea id="txtNotas" name="txtNotas" rows="4" placeholder="Me gustaria que agreguen mas cosas a la pagina,esta muy buena"></textarea> <!-- Textarea para notas adicionales -->
+            <br />
+            <input type="submit" name="btnAceptar" value="Aceptar" class="btn btn-outline-success m-3">
+            <a href="#">No tenes una cuenta todavia?Crea una ya</a>
+        </div>
+        <div class="col-12 col-md-6">
+            <img class="imgcliente" src="~/IMG/atencioncliente.jpg" alt="Equipo">
+        </div>
+    </div>
+      
   
-    <br>
-    <label class="Notas" for="txtNotas">Ingrese una sugerencia o Reporta un error:</label> <br />
-    <textarea id="txtNotas" name="txtNotas" rows="4" placeholder="Me gustaria que agreguen mas cosas a la pagina,esta muy buena"></textarea> <!-- Textarea para notas adicionales -->
- <br />
-    <input type="submit" name="btnAceptar" value="Aceptar" class="btn btn-outline-success">
 </form>
