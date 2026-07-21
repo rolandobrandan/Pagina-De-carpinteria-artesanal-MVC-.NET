@@ -2,7 +2,7 @@
 $color-primario: #F7F6F2;
 $color-secundario: #2D2D2D;
 $color-madera-detalle: #8B5E34;
-$color-verde-detalle: #4A5D4E;
+$color-marron-detalle: #9e5720;
 $verde-menta: #A3B899;
 $facebook: #1877F2;
 $WHATSAPP:#25D366;
@@ -53,7 +53,7 @@ main[role="main"] {
     }
 
     .boton:hover {
-        background-color: $color-verde-detalle;
+        background-color: $color-marron-detalle;
         color: $color-primario;
     }
 }
@@ -80,7 +80,7 @@ main[role="main"] {
                     color: $color-primario !important;
 
                     &:hover {
-                        color: $verde-menta !important;
+                        color: $color-marron-detalle !important;
                     }
                 }
             }
@@ -92,18 +92,16 @@ main[role="main"] {
             transition: 300ms;
 
             &:hover {
-                background-color: $verde-menta !important;
+                background-color: $color-marron-detalle !important;
             }
         }
     }
 
     .buscador {
         input {
-            border:1px solid gray;
+            border: 1px solid gray;
             border-radius: 20px;
             padding: 6px 15px;
-         
-            
         }
     }
 
@@ -112,35 +110,12 @@ main[role="main"] {
         color: $color-primario !important;
 
         &:hover {
-            background-color: $verde-menta !important;
-           
+            background-color: $color-marron-detalle !important;
         }
     }
 }
 
-.estadistica
-{
-    .contenedor{
-        .celda{
-           text-align:center;
-          
-        }
-        .tarjeta{
-            border:1px solid gray;
-            border-radius:8px;
-          border-color:$verde-menta;
-          padding:20px;
-          box-shadow:0 4px 8px rgba(0,0,0,0.1);
-          transition:300ms;
 
-          &:hover
-              {
-              transform:translateY(-10px);
-          }
-        }
-       
-    }
-}
 
 // footer
 
@@ -176,7 +151,7 @@ main[role="main"] {
 
         a:hover {
             transition: 0.3s;
-            color: $color-verde-detalle;
+            color: $color-marron-detalle;
             background-color: $color-primario;
         }
     }
@@ -221,7 +196,7 @@ main[role="main"] {
                 }
 
                 a:hover {
-                    color: $color-verde-detalle;
+                    color: $color-marron-detalle;
                     transition: 0.3s;
                 }
             }
@@ -309,5 +284,102 @@ main[role="main"] {
           {
           width:800px;
       }
+    }
+}
+
+
+.section-productos {
+   display: flex;
+   flex-direction: column;
+   padding: 50px;
+        .info-productos {
+            display: flex;
+            flex-direction:column;
+            padding-left: 140px;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            h2{
+               
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+
+
+    .contenedor-productos {
+        .producto {
+            .boton-prod {
+                background-color: $color-marron-detalle;
+                border: none;
+                color: white;
+                /*font-weight: bold;*/
+            }
+            .boton-prod:hover {
+                background-color: $color-madera-detalle;
+            }
+        }
+    }
+}
+
+
+.section-nosotros {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin: 15px;
+    gap: 30px;
+
+    .img-contenedor {
+        img {
+            width: 500px;
+        }
+    }
+    .info-nosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+
+        h2{
+            font-size: 45px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        span {
+            color: $color-marron-detalle;
+        }
+    }
+}
+
+
+.estadistica {
+    padding: 30px 0;
+
+    .contenedor {
+        padding: 20px;
+        
+        .celda {
+            align-items: stretch;
+            --bs-gutter-x: 2rem;
+            --bs-gutter-y: 1.5rem;
+        }
+
+        .tarjeta {
+            border: 1px solid gray;
+            border-radius: 8px;
+            border-color: $color-marron-detalle;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 300ms;
+            height: 100%;
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
     }
 }

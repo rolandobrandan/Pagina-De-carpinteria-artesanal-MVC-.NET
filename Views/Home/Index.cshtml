@@ -1,4 +1,5 @@
-﻿
+﻿@model List<Producto>
+
 <section class="portada  text-dark">
     <div class="container">
 
@@ -19,29 +20,93 @@
 
 </section>
 
-<section class="estadistica py-5">
-    <div class="contenedor container">
+<section class="section-productos">
+
+    
+    <div class="info-productos">
+        <h2>Productos destacados</h2>
+        <p>
+            Diseño, innovación y precisión. Descubre los ítems disponibles de nuestra colección y encuentra
+            exactamente lo que tu proyecto necesita.
+        </p>
+    </div>
+
+    <div class="contenedor-productos d-flex flex-wrap align-items-center justify-content-center">
+        
+
+        @foreach (var items in Model)
+        {
+            <div class="producto w-25 p-3 bg-white m-2 border rounded-3">
+                
+                <div class="p-3">
+                    <h6 class="fs-5">@items.nombre</h6>
+                    <p class="text-black-50">Materiales: @items.elaborado</p>
+                    <p class="text-black-50">Categoria: @items.categoria</p>
+                    <p class="text-black-50">Descripcion: @items.descripcion</p>
+                    <p class="text-black-50">Alto: @items.alto</p>
+                    <p class="text-black-50">Largo: @items.largo</p>
+                    <p class="text-black-50">Ancho: @items.profundidad</p>
+                    <p class="text-black-50">Precio: @items.precio</p>
+                    <p class="text-black-50">En oferta: @items.destacado</p>
+                    <p class="text-black-50">Stock: @items.activo</p>
+
+                    <button class="boton-prod btn btn-outline-primary">Comprar</button>
+                </div>
+            </div>
+
+        }
+    </div>
+
+</section>
+
+
+
+<section class="section-nosotros">
+
+    <div class="img-contenedor">
+        <img src="~/img/img-nosotros-index.jpg" alt="carpinteria" />
+    </div>
+
+    <div class="info-nosotros">
+        <h2>¿Quienes somos?</h2>
+        <p>
+            En <span>Raíces Carpintería</span> combinamos innovación, diseño y funcionalidad para desarrollar soluciones a la
+            medida de tus necesidades. Nos apasiona la excelencia técnica y el compromiso de transformar ideas 
+            complejas en experiencias simples, confiables y de alto impacto.</p>
+    </div>
+
+        
+    
+</section>
+
+<section class="estadistica">
+    <div class="contenedor">
 
         <div class="celda row">
-           
-                <div class="tarjeta col-12 col-md-4 col-lg-4">
+
+            <div class="col-12 col-md-4">
+                <div class="tarjeta">
                     <h3 class="display-4 text-warning">100%</h3>
-                    <p class="h4 text-dark">Madera Resistente </p>
+                    <p class="h4 text-dark">Madera Resistente</p>
                 </div>
-                <div class="tarjeta col-12 col-md-4 col-lg-4">
+            </div>
+
+            
+            <div class="col-12 col-md-4">
+                <div class="tarjeta">
                     <h3 class="display-4 text-warning">+15</h3>
                     <p class="h4 text-dark">Empresas Globales han puesto su confianza en nosotros</p>
                 </div>
-                <div class="tarjeta col-12 col-md-4 col-lg-4">
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="tarjeta">
                     <h3 class="display-4 text-warning">+40</h3>
                     <p class="h4 text-dark">Años de trayectoria</p>
                 </div>
             </div>
-            </div>
-           
-            
- 
+        </div>
+    </div>
+
 </section>
-
-
 

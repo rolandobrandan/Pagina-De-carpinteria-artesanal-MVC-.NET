@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using CarpinteriaArtesanal.Data;
 using CarpinteriaArtesanal.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,7 +16,10 @@ namespace CarpinteriaArtesanal.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var lista = new ListaProductos();
+            var Listas_Productos = lista.GetProductos();
+            return View(Listas_Productos);
+            
         }
         public IActionResult Contacto()
         {
@@ -25,6 +29,10 @@ namespace CarpinteriaArtesanal.Controllers
         {
             return View();
         }
+        //public IActionResult Productos()
+        //{
+            
+        //}
         public IActionResult Privacy()
         {
             return View();
