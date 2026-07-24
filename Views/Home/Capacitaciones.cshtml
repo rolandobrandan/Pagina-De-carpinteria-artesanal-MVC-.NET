@@ -1,0 +1,55 @@
+﻿@model List<Taller>;
+
+<section class="section-cursos">
+
+    <div class="info-cursos">
+        <span>Formación Profesional</span>
+        <h1>Aprende el Oficio, Domina la Técnica</h1>
+        <p>Capacitaciones presenciales y talleres prácticos diseñados para adquirir habilidades reales en carpintería, 
+            diseño de mobiliario y manejo seguro de maquinaria industrial.</p>
+    </div>
+
+    <div class="botones-cursos">
+
+        <a class="boton1" href="#">Ver cursos disponibles</a>
+        <a class="boton1" href="#">Talleres gratis</a>
+
+    </div>
+
+</section>
+
+<section class="section-capacitaciones">
+
+    <div class="info-capacitaciones">
+        <h2></h2>
+        <p></p>
+    </div>
+
+    <div class="cursos-contenedor d-flex flex-wrap align-items-center justify-content-center">
+
+        @foreach (var items in Model)
+        {
+
+
+
+            <div class="w-25 p-3 bg-white m-2 border rounded-3">
+
+                <div class="curso p-3">
+
+                    <p class="text-black-50">Nombre: @items.nombretaller</p>
+                    <p class="text-black-50">Profesor: @items.dictado</p>
+                    <p class="text-black-50">Duracion: @items.duracion</p>
+                    <p class="text-black-50">Materiales: @items.materiales</p>
+                    <p class="text-black-50">Precio: @items.precio</p>
+                    <p class="text-black-50">Disponibilidad: @items.activo</p>
+
+                    <button class="boton-cursos btn btn-outline-primary">Comprar</button>
+
+                </div>
+            </div>
+
+
+        }
+
+    </div>
+</section>

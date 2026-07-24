@@ -31,6 +31,12 @@ namespace CarpinteriaArtesanal.Controllers
             var Listas_Empleados = lista.GetEmpleados();
             return View(Listas_Empleados);
         }
+        public IActionResult Capacitaciones()
+        {
+            var lista = new ListaTalleres();
+            var Listas_Talleres = lista.GetTalleres();
+            return View(Listas_Talleres);
+        }
         
         public IActionResult Privacy()
         {

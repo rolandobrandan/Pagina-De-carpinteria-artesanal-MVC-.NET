@@ -33,44 +33,39 @@
                     <ul class="nav-scss  navbar-nav d-flex align-items-center justify-content-center ms-5">
                         <li class="item-scss nav-item ">
                             <a asp-controller="Home" asp-action="Index" class="link-scss nav-link">
-                                <i class="fa-solid fa-house"></i>
+                                @* <i class="fa-solid fa-house"></i> *@
                                 Inicio
                             </a>
                         </li>
                         <li class="item-scss nav-item ">
-                            <a href="#" class="link-scss nav-link ">
-                                <i class="fa-solid fa-hammer me-2"></i>
-                                Nuestros Trabajos
-                            </a>
-                        </li>
-                        <li class="item-scss nav-item">
-                            <a href="productos" class="link-scss nav-link">
-                                Productos
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </a>
-                        </li>
-                        <li class="item-scss nav-item">
-                            <a asp-controller="Home" asp-action="Nosotros"  class="link-scss nav-link">
-                                <i class="fa-solid fa-warehouse me-2"></i>
+                            <a asp-controller="Home" asp-action="Nosotros" class="link-scss nav-link">
+                                @* <i class="fa-solid fa-warehouse me-2"></i> *@
                                 Nuestro Equipo
+                            </a>
+                            
+                        </li>
+                        <li class="item-scss nav-item">
+                            <a asp-controller="Home" asp-action="Capacitaciones" class="link-scss nav-link">
+                                Capacitaciones
+                                
+                            </a>
+                        </li>
+                        <li class="item-scss nav-item">
+                            <a href="#" class="link-scss nav-link ">
+                                @* <i class="fa-solid fa-hammer me-2"></i> *@
+                                Nuestros Trabajos
                             </a>
                         </li>
                      
                         <li class="item-scss nav-item">
                             <a href="#" class="link-scss nav-link">
-                                <i class="fa-solid fa-user-group"></i>
+                                @* <i class="fa-solid fa-user-group"></i> *@
                                 Conocenos
                             </a>
                         </li>
 
                     </ul>
 
-
-
-
-                    <a asp-controller="Home" asp-action="Contacto" class="boton me-5 btn btn-primary">
-                        <i class="fa-regular fa-user"></i> Contacto
-                    </a>
                 </div>
              
         </div>

@@ -70,10 +70,12 @@ main[role=main] {
   border: 1px solid gray;
   border-radius: 20px;
   padding: 6px 15px;
+  width: 450px;
 }
 .navegacion > .boton {
   background-color: #8B5E34 !important;
   color: #F7F6F2 !important;
+  border: none;
 }
 .navegacion > .boton:hover {
   background-color: #9e5720 !important;
@@ -343,7 +345,7 @@ main[role=main] {
 .cards-mision .carta:hover {
   background-color: #2D2D2D;
   color: #F7F6F2;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 .empleados-section {
@@ -386,6 +388,90 @@ main[role=main] {
   font-weight: 600;
 }
 .empleados-section .empleados-contenedor .empleado .boton-empleados:hover {
+  background-color: #F7F6F2;
+  color: #2D2D2D;
+  font-weight: 600;
+  border: 2px solid #2D2D2D;
+  transition: 0.5s;
+}
+
+.section-cursos {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/banner-cursos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-cursos .info-cursos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  color: #F7F6F2;
+}
+.section-cursos .info-cursos span {
+  border: 1px solid #9e5720;
+  padding: 5px;
+  background-color: #9e5720;
+  font-weight: 500;
+  border-radius: 30px;
+  width: 200px;
+}
+.section-cursos .info-cursos h1 {
+  font-size: 45px;
+}
+.section-cursos .info-cursos p {
+  font-size: 17px;
+  font-weight: 500;
+}
+.section-cursos .botones-cursos {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+  /*.boton2 {
+      text-decoration: none;
+      color: $color-primario;
+      border: 2px solid $color-primario;
+      padding: 7px;
+      border-radius: 30px;
+  }*/
+}
+.section-cursos .botones-cursos .boton1 {
+  text-decoration: none;
+  color: #F7F6F2;
+  border: 2px solid #F7F6F2;
+  padding: 7px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.section-cursos .botones-cursos .boton1:hover {
+  background-color: #F7F6F2;
+  color: #9e5720;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.section-capacitaciones .cursos-contenedor .curso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.section-capacitaciones .cursos-contenedor .boton-cursos {
+  background-color: #9e5720;
+  border: none;
+  color: white;
+  width: 150px;
+  border: 2px solid transparent;
+  font-weight: 600;
+}
+.section-capacitaciones .cursos-contenedor .boton-cursos:hover {
   background-color: #F7F6F2;
   color: #2D2D2D;
   font-weight: 600;
